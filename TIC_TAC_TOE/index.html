@@ -1,0 +1,67 @@
+<!--
+Name:  Ferhad Mislim
+Date:  January 27 2021
+
+App Description: This application allows 2 persons to play Tic Tac Toe game
+and display the who is the winner.
+
+Page Description: This is the main page for Tic Tac Toe game 
+Files: index.html - the main page
+       tic-tac-toe.css - the main styles for this application
+       tic-tac-toe.js - Javascript functions and constants specific to this application
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/tic-tac-toe.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- main content -->
+  <header>
+    <h1>Tic Tac Toe!</h1>
+  </header>
+  <br><br>
+  <!-- game board -->
+  <table>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </table>
+
+  <!-- play information and controls -->
+  <p>Player <span id="player">X</span> Go!
+    <br><br><button id="reset">Reset Game</button>
+  </p>
+
+  <!-- footer -->
+  <footer>Ferhad Mislim
+  </footer>
+
+  <!-- hidden elements used for displaying results -->
+  <div id="message">
+    <p>GAME OVER!</p>
+    <h3 id="winner"></h3>
+    <p>&mdash;click anywhere in the box to dismiss this message&mdash;</p>
+  </div>
+  <div id="overlay"></div>
+  <script src="./tic-tac-toe.js"></script>
+</body>
+
+</html>
